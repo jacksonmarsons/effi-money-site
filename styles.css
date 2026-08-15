@@ -1,0 +1,108 @@
+:root {
+  --bg: #f7f7f7;
+  --text: #161616;
+  --muted: rgba(22, 22, 22, 0.72);
+  --accent: #e76643;
+  --card: #ffffff;
+  --line: #e3e3e3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  line-height: 1.55;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--accent);
+}
+
+header,
+main,
+footer {
+  width: min(720px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+header {
+  padding: 28px 0 8px;
+}
+
+header a.brand {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+nav {
+  margin-top: 12px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+main {
+  flex: 1;
+  padding: 24px 0 48px;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 1.25;
+  margin: 0 0 16px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 28px 0 10px;
+}
+
+p,
+li {
+  color: var(--muted);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 22px;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+footer {
+  padding: 16px 0 32px;
+  color: var(--muted);
+  font-size: 13px;
+  border-top: 1px solid var(--line);
+}
