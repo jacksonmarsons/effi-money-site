@@ -11,6 +11,7 @@
 - https://USERNAME.github.io/effi-money-site/
 - https://USERNAME.github.io/effi-money-site/privacy/
 - https://USERNAME.github.io/effi-money-site/support/
+- https://USERNAME.github.io/effi-money-site/app/version.json (служебный манифест версий; не ссылать со страниц)
 
 В приложении URL политики задаётся в
 `lib/core/legal/legal_config.dart` (`kPrivacyPolicyUrl`).
@@ -36,3 +37,11 @@ git push -u origin main
 4. Через 1–2 минуты откройте `/privacy/` в браузере без авторизации.
 
 Файл `.nojekyll` нужен, чтобы GitHub Pages отдавал файлы как есть.
+
+## Манифест версий приложения
+
+Файл [`app/version.json`](app/version.json) читает приложение при холодном
+старте (фон, без блокировки UI). Обновляйте `latest` / `releases` **после**
+того, как билд реально доступен в сторе. `minSupported` поднимайте редко —
+только когда старые сборки нельзя оставлять в работе. App Store ID в
+`storeUrl` замените на настоящий после создания записи в App Store Connect.
