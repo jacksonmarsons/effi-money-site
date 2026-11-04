@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "ios": {
-    "latest": "1.1.4",
+    "latest": "1.1.5",
     "minSupported": "1.1.3",
     "storeUrl": "https://apps.apple.com/ru/app/6774089117",
     "releases": [
       {
-        "version": "1.1.4",
-        "notes": "Стабильность и мелкие улучшения."
+        "version": "1.1.5",
+        "notes": "Подсказки по приложению и исправление мелких недочётов."
       }
     ]
   },
